@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Pokedex-Angular2": {
+    "Pokedex-Angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pokedex-angular2",
+            "outputPath": "dist/pokedex-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Pokedex-Angular2:build:production"
+              "buildTarget": "Pokedex-Angular:build:production"
             },
             "development": {
-              "buildTarget": "Pokedex-Angular2:build:development"
+              "buildTarget": "Pokedex-Angular:build:development"
             }
           },
           "defaultConfiguration": "development"
